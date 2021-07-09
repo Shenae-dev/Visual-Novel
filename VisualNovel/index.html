@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="visual_novel.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Visual Novel</title>
+</head>
+<body onload="initNovel(800, 600);">
+     <div id="novelDiv">
+         <div style="position: absolute;
+          left:0; top: 0; z-index:-1">
+             <img id="background0" src="images/background0.png" width="800" height="600">
+             </div>
+         <div style="position: absolute;
+          left:0; top: 0; z-index:-1">
+             <img id="background1" src="images/background1.png" width="800" height="600"/>
+             </div>
+         <div id="dialogDiv" style="z-index:100">
+             </div>
+         </div>
+     <div style="text-align:center; margin-top: 0.5em;">
+         <input type="button" value="Back to Beginning" onclick="initNovel(800, 450)" />
+         </div>
+    <script type="text/javascript" src="exampleNovel.js"></script>
+</body>
+</html>
